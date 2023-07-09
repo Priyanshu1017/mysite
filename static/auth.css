@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Courgette&family=Lobster&display=swap');
+
+.auth {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    border: 6px outset cornflowerblue ;
+    padding: 3vw;
+    width: 40%;
+    margin: auto;
+    border-radius: 4vw;
+}
+.auth:hover {
+    
+    animation: rainbow 3s infinite ease-in-out;
+     
+ }
+@keyframes rainbow {
+    0%{
+        border-color: #9bc5ea;
+    }
+    20%{
+        border-color: aqua;
+    }
+    40%{
+        border-color: rgb(231, 60, 29);
+    }
+    60%{
+        border-color: rgb(144, 223, 41);
+    }
+    80%{
+        border-color: rgb(118, 74, 175);
+    }
+    100%{
+        border-color: rgb(228, 236, 236);
+    }
+}
+
+label{
+    font-family:'Acme','Courgette','Lobster' ;
+}
+input{
+    border-radius: 2vw;
+}

@@ -11,8 +11,10 @@ def index(request):
         }
     # return HttpResponse("This is homepage")
     return render(request, 'index.html',context)
+
 def about(request):
         return render(request, 'about.html')
+
 def services(request):
         return render(request, 'services.html')
 
@@ -39,7 +41,6 @@ def signup(request):
                 
                 return redirect('/')
         return render(request, 'signup.html')
-
 
 def user_login(request):
         if request.method=="POST":
