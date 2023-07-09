@@ -51,6 +51,7 @@ def user_login(request):
                 
                 if user is not None:
                         login(request, user)
+                        messages.success(request, 'Successfully loggedin!')
                         return render(request, 'index.html')
                 else:
                 
